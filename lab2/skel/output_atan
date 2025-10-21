@@ -1,0 +1,14 @@
+vinti03@Bocanila:~/ANUL_4_1/APP/app-labs/lab2/skel$ make build
+gcc atan.c -o atan -fopenmp
+g++ count_letters.cpp -o count_letters -fopenmp
+gcc schedule.c -o schedule -fopenmp
+vinti03@Bocanila:~/ANUL_4_1/APP/app-labs/lab2/skel$ ./atan
+Execution time 0.0405608
+The computed value of pi is 3.141593
+vinti03@Bocanila:~/ANUL_4_1/APP/app-labs/lab2/skel$ make build
+gcc atan.c -o atan -fopenmp
+g++ count_letters.cpp -o count_letters -fopenmp
+gcc schedule.c -o schedule -fopenmp
+vinti03@Bocanila:~/ANUL_4_1/APP/app-labs/lab2/skel$ ./atan
+Execution time 0.0104204
+The computed value of pi is 3.141593

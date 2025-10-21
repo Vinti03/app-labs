@@ -16,6 +16,8 @@ int main() {
         letters[(char)i] = 0;
     }
 
+    double start_time = omp_get_wtime();
+
     for (int i = 1; i <= 100; i++) {
         string filename = "files/f" + to_string(i);
         char content[10000];
@@ -35,7 +37,14 @@ int main() {
         }
     }
 
+    double end_time = omp_get_wtime();
+
     for (int i = 32; i < 128; i++) {
         cout << (char)i << ": " << letters[char(i)] << endl;
     }
+
+    cout << "------------------------------------------" << endl;
+    cout << "Timp de executie (serial): " << end_time - start_time << " secunde" << endl;
+    
+    return 0;
 }
